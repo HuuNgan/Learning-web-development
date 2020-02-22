@@ -1,4 +1,4 @@
-
+HELLO MAN, HAVE A NICE DAY! HERE ARE SOME GIT COMMANDS
 
 git clone  <URL>: Clone project to local (not include “<” and “>”)
 cd  <derectory name>  : change the directory
@@ -8,3 +8,4 @@ atom .  : open that file using a text editor
 git add : going to take some number of files, one or more files that we’ve change
 git commit -m "message"  : let everyone know what you change with this version
 git push  : push your local changes to a remote server on github
+git pull  : download the latest version of your project from github to your computer
