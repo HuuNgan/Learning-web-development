@@ -1,0 +1,10 @@
+
+
+git clone  <URL>: Clone project to local (not include “<” and “>”)
+cd  <derectory name>  : change the directory
+ls  :list or list all files
+touch <file name>  : creat a brand new file (ex: “touch hello.html”)
+atom .  : open that file using a text editor
+git add : going to take some number of files, one or more files that we’ve change
+git commit -m "message"  : let everyone know what you change with this version
+git push  : push your local changes to a remote server on github
