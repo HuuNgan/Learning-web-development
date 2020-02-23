@@ -1,11 +1,17 @@
 HELLO MAN, HAVE A NICE DAY! HERE ARE SOME GIT COMMANDS
 
-git clone  <URL>: Clone project to local (not include “<” and “>”)
-cd  <derectory name>  : change the directory
-ls  :list or list all files
-touch <file name>  : creat a brand new file (ex: “touch hello.html”)
-atom .  : open that file using a text editor
-git add : going to take some number of files, one or more files that we’ve change
-git commit -m "message"  : let everyone know what you change with this version
-git push  : push your local changes to a remote server on github
-git pull  : download the latest version of your project from github to your computer
+git clone  <URL>: Clone project to local (not include “<” and “>”).
+cd  <derectory name>  : change the directory.
+ls  :list or list all files.
+touch <file name>  : creat a brand new file (ex: “touch hello.html”).
+atom .  : open that file using a text editor.
+git add : going to take some number of files, one or more files that we’ve change.
+git commit -m "message"  : let everyone know what you change with this version.
+git push  : push your local changes to a remote server on github.
+git pull  : download the latest version of your project from github to your computer.
+git log  : show you a history of all of the commits that you've made.
+git reset
+	git reset --hard <commit>: reset your repository back to the version which was marked by that commit hash.
+	git reset --hard origin/master: back to the version that was previously on github
+									so that we'll able to see whatever it was originally.
+	
