@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+
+    <p>Steve was born in Tokyo, Japan in 1950. He moved to London with his parents when he was 5 years old. Steve started school there and his father began work at the hospital. His mother was a house wife and he had four brothers.
+    </p>
+    <p>He lived in England for 2 years then moved to Amman, Jordan where he lived there for 10 years. Steve then moved to Cyprus to study at the Mediterranean University. Unfortunately, he did not succeed and returned to Jordan. His parents were very unhappy so he decided to try in America.
+    </p>
+
+    <a href="{{ url_for('more') }}">See more...</a>
+
+{% endblock %}
