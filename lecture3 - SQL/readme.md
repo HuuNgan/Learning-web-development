@@ -12,7 +12,7 @@
 # After log in to postgres, run this:
     $ psql
 
-# To list Database avalable, run this:
+# To list Database available, run this:
     postgres=# \l
 # To display list of relations in Database:
     postgres=# \d
