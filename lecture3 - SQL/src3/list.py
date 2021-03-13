@@ -13,3 +13,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# You may need to install Flask-SQLAlchemy in order to run this code.
+# Try this $ pip install Flask-SQLAlchemy.
