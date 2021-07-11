@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Currency Exchanger</h1>
+        <title>Currency Exchange</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').onsubmit = function() {
+                fetch('http://data.fixer.io/api/latest?access_key=a07d00a82de79ce47b9616093f013cf1')
+                .then(response => response.json())
+                .then(data => {
+                    // console.log(data);
+                    const currency1 = document.querySelector('#currency1').value.toUpperCase();
+                    const currency2 = document.querySelector('#currency2').value.toUpperCase();
+                    const no_cur1 = document.querySelector('#quantity').value.toUpperCase();
+                    const rate = data.rates[currency2]/data.rates[currency1];
+                    const output_value = rate*no_cur1;
+
+                    if(rate !== undefined) {
+                        document.querySelector('#result').innerHTML = no_cur1+currency1+' is equal to '+ output_value.toFixed(4) + ' '+currency2;
+                    }
+                    else {
+                        document.querySelector('#result').innerHTML = 'Invalid currency!';
+                    }
+                })
+                .catch(error => {
+                    console.log('Error: ',error);
+                });
+                    return false;
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="quantity" placeholder="Quantity" type="text">
+            <input id="currency1" placeholder="Input currency" type="text"><br><br>
+            <input id="currency2" placeholder="Output currency" type="text"><br><br>
+            <input type="submit" value="Convert">
+        </form>
+        <div id="result"
+    </body>
+</html>
